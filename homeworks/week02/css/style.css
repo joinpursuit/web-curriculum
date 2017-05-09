@@ -1,0 +1,24 @@
+
+/*
+  Some basic styling to get you started.
+  */
+
+.movie {
+    border: solid 1px;
+}
+
+.movie .description {
+}
+
+/*
+  Use the following for genre-specific styling. For example, maybe
+  use a different border color or background color for each genre.
+  */
+.animation {
+}
+
+.action {
+}
+
+.drama {
+}

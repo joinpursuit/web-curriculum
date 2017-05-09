@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div {
+        padding: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      #red {background: red;}
+      #orange {background: orange}
+      #yellow {background: yellow}
+      #green {background: green}
+      #blue {background: blue}
+      #indigo {background: indigo}
+      #violet {background: violet}
+
+    </style>
+
+  </head>
+  <body>
+    <div id="red">
+      <div id="orange">
+        <div id="yellow">
+          <div id="green">
+            <div id="blue">
+              <div id="indigo">
+                <div id="violet">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function showColor(e) {
+        console.log(e.currentTarget.id)
+      }
+      var red = document.getElementById('red')
+      var orange = document.getElementById('orange')
+      var yellow = document.getElementById('yellow')
+      var green = document.getElementById('green')
+      var blue = document.getElementById('blue')
+      var indigo = document.getElementById('indigo')
+      var violet = document.getElementById('violet')
+      red.addEventListener('click', showColor)
+      orange.addEventListener('click', showColor)
+      yellow.addEventListener('click', showColor)
+      green.addEventListener('click', showColor)
+      blue.addEventListener('click', showColor)
+      indigo.addEventListener('click', showColor)
+      violet.addEventListener('click', showColor)
+
+    </script>
+  </body>
+</html>

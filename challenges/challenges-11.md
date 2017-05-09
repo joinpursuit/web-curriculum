@@ -1,0 +1,4 @@
+- [Find sum of top-left to bottom-right diagonals](https://www.codewars.com/kata/find-sum-of-top-left-to-bottom-right-diagonals) (7 kyu)
+- [Number pairs](https://www.codewars.com/kata/number-pairs) (7 kyu)
+- [Extract the IDs from the data set](https://www.codewars.com/kata/extract-the-ids-from-the-data-set) (6 kyu)
+- [Closures and Scope](https://www.codewars.com/kata/closures-and-scopes/javascript) (6 kyu)

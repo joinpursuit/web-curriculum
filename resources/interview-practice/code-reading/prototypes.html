@@ -1,0 +1,97 @@
+<script>
+
+function shape(type, color) {
+  return {
+    type: type,
+    color: color
+  }
+}
+
+// function shape(type, color) {
+//   var this = {};
+//
+//   this.type = type;
+//   this.color = color;
+//
+//   return this;
+// }
+
+function Shape(type, color) {
+  this.type = type;
+  this.color = color;
+
+  // create object
+  // this = object
+  // run function
+  // return this
+}
+
+Shape.prototype.logColor = function() {
+  return this.color;
+}
+
+// inherit from Shape
+function Circle() {
+  // type, color
+}
+
+Circle.prototype = new Shape();
+
+var circle1 = new Circle('circle', 'aqua')
+
+var shape1 = new Shape('square', 'red'); // object
+
+var shape2 = shape('triangle', 'blue'); // object
+
+var shape3 = new Shape('rectangle', 'green');
+
+shape3.logColor();
+shape1.logColor();
+
+
+
+var myseteryObj = new Object();
+
+var mysteryObj2 = new Array();
+
+// Arrays under the hood
+//
+// function Array() {
+//   return [];
+//   this.concat = function() {
+//
+//   }
+// }
+//
+// Array.prototype.concat = function() {
+//   //...
+// }
+//
+// Array.prototype.indexOf = function() {
+//   //...
+// }
+//
+// Array.prototype.forEach = function() {
+//   //...
+// }
+//
+// var arr = new Array();
+// var arr2 = [];
+// var arr3 = [];
+//
+// arr3.forEach()
+//
+// function sum(a, b) {
+//   return a + b;
+//   this.concat = function() {
+//
+//   }
+// }
+//
+// sum.prototype;
+
+
+
+debugger;
+
+</script>

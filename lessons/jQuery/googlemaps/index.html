@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="map.js" defer></script>
+    <title>Map</title>
+  </head>
+  <body>
+    <iframe
+      id="map"
+      width="600"
+      height="450"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDHcboYMibLv-8Hp_Z2-ykBIAaB4qN9PS8&q=Coalition+for+Queens" allowfullscreen>
+    </iframe>
+    <select class="mode">
+      <option>place</option>
+      <option>directions</option>
+      <option>search</option>
+      <option>view</option>
+    </select>
+    <form id="form">
+      <input
+        class="first"
+        type="text"
+        name="first"
+        placeholder="place name or address">
+      <input
+        class="second hide"
+        type="text"
+        name="second"
+        placeholder="">
+      <input type="submit" value="Click">
+    </form>
+  </body>
+</html>

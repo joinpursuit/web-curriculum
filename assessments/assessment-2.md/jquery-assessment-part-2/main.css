@@ -1,0 +1,38 @@
+body {
+  font-family: Helvetica, Monospace;
+  padding: 24px;
+}
+
+.square {
+  display: inline-block;
+  margin: 16px;
+  width: 128px;
+  height: 128px;
+  background-color: black;
+}
+
+.circle {
+  display: inline-block;
+  margin: 16px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.triangle {
+  display: inline-block;
+  margin: 16px 8px;
+  width: 0;
+  height: 0;
+  border-left: 64px solid transparent;
+  border-right: 64px solid transparent;
+  border-bottom: 128px solid black;
+}
+
+#shape {
+  margin: 16px;
+  font-size: 32px;
+  font-weight: bold;
+}
+

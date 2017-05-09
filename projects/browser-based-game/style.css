@@ -1,0 +1,9 @@
+body{
+  text-align: center;
+}
+
+#maze{
+  font-size: 18px;
+  font-family: monospace;
+
+}

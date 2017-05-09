@@ -1,0 +1,3 @@
+- [Tea for two](http://www.codewars.com/kata/tea-for-two) (7 kyu)
+- [Custom each() Array method](http://www.codewars.com/kata/custom-each-array-method) (6 kyu)
+- [Josephus survivor](http://www.codewars.com/kata/josephus-survivor) (5 kyu)

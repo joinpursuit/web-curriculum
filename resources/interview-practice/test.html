@@ -1,0 +1,29 @@
+<script>
+function createGame() {
+
+  var score = 0;
+
+  function privateFunc() {
+
+  }
+
+  function getScore() {
+    return score;
+  }
+
+  function addScore() {
+    score += 1;
+  }
+
+ // public API
+  return {
+    getScore: getScore,
+    addScore: addScore
+  }
+}
+
+var game = createGame();
+
+game.getScore();
+
+</script>

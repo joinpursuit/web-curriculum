@@ -1,0 +1,23 @@
+<script>
+
+var counter = function outerFunction() {
+  var count = 0;
+  return function innerFunction() {
+    count++;
+    return count;
+  }
+}
+
+var c1 = counter();
+
+var a = c1();
+
+var b = c1();
+
+var c2 = counter();
+
+var c = c2();
+
+console.log(`a:${a} b:${b} c:${c}`)
+
+</script>

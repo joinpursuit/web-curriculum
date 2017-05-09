@@ -1,0 +1,25 @@
+- what is a closure and why are they important?
+- is JavaScript async or sync?
+- why is async important?
+- what is the event loop?
+- what is the event queue?
+- what is the call stack?
+- are objects passed by reference or by value?
+- what is scope and how does it work?
+- what's the difference between using dot notation and bracket notation?
+- what are at least two ways you can loop over an object in JavaScript?
+- why would you use object prototypes to define methods, instead of adding the methods directly to the constructor?
+- what are at least two organizational strategies for writing a modular UI interface using Vanilla JS?
+- what is the difference between == and ===?
+- what's the difference between a callback and a promise?
+- how can you create private variables in JavaScript?
+- explain hoisting
+- what is an IIFE and when would you use one?
+- explain the following JavaScript design patterns: module, constructor/prototype, observer, singleton
+- how does inheritance work in javascript?
+- what's the difference between call, apply, and bind?
+- what is the DOM?
+- how would you build a todo-list app using Vanilla JS?
+- how can you select elements in the DOM?
+- what is event bubbling/event propogation and why is it important?
+- what is an event listener?

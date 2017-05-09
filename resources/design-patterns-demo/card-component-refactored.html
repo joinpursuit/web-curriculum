@@ -1,0 +1,57 @@
+<html>
+  <body>
+    <script>
+    function Card() {
+        // top level container elements (aka different subcomponents)
+        var cardContainer = document.createElement('div');
+        var header = document.createElement('div');
+        var mainImageContainer = document.createElement('div');
+        var descriptionContainer = document.createElement('div');
+
+        function createImage(imgSrc, imgHeight, imgWidth, borderRadius=0) {
+          var newImage = document.createElement('img');
+          newImage.setAttribute('src', imgSrc)
+          newImage.style.height = imgHeight;
+          newImage.style.width = imgWidth;
+          newImage.style.borderRadius = borderRadius;
+          return newImage;
+        }
+
+        function createText(text, nodeSize) {
+          var newTextElement = document.createElement(nodeSize);
+          var newTextNode = document.createTextNode(text);
+          newTextElement.appendChild(newTextNode);
+          return newTextElement;
+        }
+
+        function buildSubComponent(componentsArr, target) {
+          componentsArr.forEach(component => target.appendChild(component))
+        }
+
+      function initialize(avatarURL, avatarName, mainImgURL, descriptionTitle, descriptionText) {
+        // create header component
+        buildSubComponent([createImage(avatarURL, 100, 100, '50%'), document.createTextNode(avatarName)], header)
+        // create main image component
+        buildSubComponent([createImage(mainImgURL, 300, 500)], mainImageContainer)
+        // create description component
+        buildSubComponent([createText(descriptionTitle, 'h4'), createText(descriptionText, 'p')], descriptionContainer)
+        // attach all subcomponents to cardContainer
+        buildSubComponent([header, mainImageContainer, descriptionContainer], cardContainer)
+        // append card container to the body
+        document.body.appendChild(cardContainer);
+      }
+
+      // publicly accessible API
+      return {
+        initialize: initialize
+      }
+    }
+
+    var PuppyCard = Card();
+    PuppyCard.initialize('http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg', "Hi I'm a puppy", 'http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg', 'Puppy Info', 'Puppies are awesome lorem ipsum blah blah blah blah blah blah blah blahblah blah blah blah blah blah blah blah....');
+    var SportsCard = Card();
+    SportsCard.inititialize();
+
+    </script>
+  </body>
+</html>

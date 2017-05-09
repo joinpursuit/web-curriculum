@@ -1,0 +1,94 @@
+
+/* big stuff */
+
+.big {
+    width: 80%;
+    margin: 25px auto;
+}
+
+.big dl {
+    height: 15px;
+}
+.big dt, .big dd {
+    float: left;
+}
+.big dd {
+    margin-left: 5px;
+}
+
+/* small stuff */
+
+.small {
+    width: 100%;
+}
+
+.small h1 {
+    font-size: 16px;
+}
+.small h1, .small dl, .small dd {
+    display: inline;
+    margin: 0;
+}
+.small dd.year:before {
+    content: "(";
+}
+.small dd.genre:after {
+    content: ")";
+}
+.small dt {
+    display: none;
+}
+
+.small .cast, .small ul, .small li {
+    display: inline;
+}
+.small ul {
+    padding: 5px;
+}
+.small li {
+    list-style-type: none;
+}
+.small li:after {
+    content: ",";
+}
+.small li:last-child:after {
+    content: "";
+}
+
+.small .description {
+    display: none;
+}
+
+/* both */
+
+dd.year:after {
+    content: ", ";
+    margin-right: 5px;
+}
+
+.movie {
+    border: solid 1px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.movie .description {
+    padding: 5px;
+    background-color: #ddd;
+}
+
+/*
+  Use the following for genre-specific styling. For example, maybe
+  use a different border color or background color for each genre.
+  */
+.animation {
+    border-color: #fcc;
+}
+
+.action {
+    border-color: #33c;
+}
+
+.drama {
+    border-color: #3f3;
+}

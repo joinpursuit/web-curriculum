@@ -1,0 +1,30 @@
+<script>
+var a = {}
+
+for(var i = 0; i < 3; i++) {
+  a[i] = (function(i) {
+    return function(){
+      alert(i)
+    }
+  })(i); // IIFE = immediately invoked function expression
+}
+
+// a[0] = function() {
+//   // closure: i = 0;
+//   alert(i)
+// }
+//
+// a[1] = function() {
+//   // closure: i = 1;
+//   alert(i)
+// }
+//
+// a[2] = function() {
+//   // closure: i = 2;
+//   alert(i)
+// }
+
+a[0]();
+a[1]();
+a[2]();
+</script>

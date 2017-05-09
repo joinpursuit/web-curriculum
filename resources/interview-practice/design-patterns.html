@@ -1,0 +1,56 @@
+<!-- // module pattern
+// IIFE (immediately invoked funcion expression) to create a closure -->
+<script>
+
+
+var myModule = function(){
+  var mySecretId = 122345;
+
+  function divide(a, b) {
+    return a / b;
+  }
+
+  function add(a, b) {
+    return a + b;
+  }
+
+  function multiply(a, b) {
+    return a * b;
+  }
+
+  function getSecretID() {
+    return mySecretId;
+  }
+
+  function setSecretID(newID) {
+    mySecretId = newID;
+  }
+
+
+  // public API
+  return {
+    add: add,
+    multiply: multiply,
+    getSecretID: getSecretID
+  }
+
+}
+
+var publicModule = myModule();
+
+function Car(type, color) {
+  this.type = type;
+  this.color = color;
+  this.secretID = '12345'
+}
+
+Car.prototype.getSecretID = function() {
+  return this.secretID;
+}
+
+var car1 = new Car('Volvo', 'red');
+car1.getSecretID();
+
+
+
+</script>

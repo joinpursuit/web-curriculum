@@ -1,0 +1,46 @@
+
+/*
+  Some basic styling to get you started.
+  */
+
+.big {
+    width: 80%;
+    margin: 25px auto;
+}
+
+.small {
+    width: 100%;
+}
+
+.small ul {
+    padding: 5px;
+}
+.small li {
+    list-style-type: none;
+}
+
+.movie {
+    border: solid 1px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.movie .description {
+    background-color: #ddd;
+}
+
+/*
+  Use the following for genre-specific styling. For example, maybe
+  use a different border color or background color for each genre.
+  */
+.animation {
+    border-color: #fcc;
+}
+
+.action {
+    border-color: #33c;
+}
+
+.drama {
+    border-color: #3f3;
+}

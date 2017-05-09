@@ -1,0 +1,4 @@
+- [List Filtering](https://www.codewars.com/kata/list-filtering) (7 kyu)
+- [Character Concatenation](https://www.codewars.com/kata/character-concatenation) (7 kyu)
+- [Equal Sides of An Array](https://www.codewars.com/kata/equal-sides-of-an-array) (6 kyu)
+- [Return substring instance count -2](http://www.codewars.com/kata/return-substring-instance-count-2) (5 kyu)

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>closures</title>
+
+  </head>
+  <body>
+    <button type="button" name="button">1</button>
+    <button type="button" name="button">2</button>
+    <button type="button" name="button">3</button>
+    <button type="button" name="button">4</button>
+  </body>
+  <script type="text/javascript">
+  // function handlerWrapper(i) {
+  //    return function() {
+  //       console.log('You clicked element #' + (i + 1));
+  //    }
+  // }
+  //
+  // var buttons = document.getElementsByTagName('button');
+  // for (var i = 0; i < buttons.length; i++) {
+  //    buttons[i].addEventListener('click', handlerWrapper(i));
+  // }
+
+  function handlerWrapper(i) {
+    var closure = function() {
+      console.log('You clicked button #' + i);
+    }
+
+    return closure
+  }
+
+  var buttons = document.getElementsByTagName('button');
+  for (var i = 0; i < buttons.length; i++) {
+     buttons[i].addEventListener('click', handlerWrapper(i));
+  }
+
+  </script>
+</html>

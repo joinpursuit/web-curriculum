@@ -1,0 +1,4 @@
+- [Gradebook](https://www.codewars.com/kata/grasshopper-grade-book) (8 kyu)
+- [Remove The Minimum](https://www.codewars.com/kata/remove-the-minimum) (7 Kyu)
+- [Find the Odd Int](https://www.codewars.com/kata/find-the-odd-int/train/javascript) (6 kyu)
+- [Validate Credit Card Number](https://www.codewars.com/kata/validate-credit-card-number) (6 kyu)

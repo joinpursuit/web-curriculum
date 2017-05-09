@@ -1,0 +1,33 @@
+body {
+  font-family: Helvetica, Monospace;
+  padding: 24px;
+}
+
+div {
+  margin: 8px 0;
+}
+
+input, button {
+  font-size: 14px;
+  border: 1px solid #aaa;
+  padding: 4px;
+}
+
+button {
+  background: #eee;
+}
+
+.to-do {
+  list-style-type: none;
+}
+
+.not-done:before {
+  content: '\2610'; 
+  margin-right: 0.5em; 
+}
+
+.done:before {
+  content: '\2611'; 
+  margin-right: 0.5em;
+}
+

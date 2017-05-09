@@ -1,0 +1,61 @@
+<html>
+  <body>
+    <script>
+
+    function Card(avatarURL, avatarName, mainImgURL) {
+
+      var cardContainer = document.createElement('div');
+      var header = document.createElement('div');
+      var mainImageContainer = document.createElement('div');
+
+      function createImage(imgSrc, imgHeight, imgWidth) {
+        var newImage = document.createElement('img');
+        newImage.setAttribute('src', imgSrc)
+        newImage.style.height = imgHeight;
+        newImage.style.width = imgWidth;
+      }
+
+      function buildHeader() {
+        // create avatar image
+        var avatar = document.createElement('img');
+        avatar.setAttribute('src', avatarURL)
+        avatar.style.height = 100;
+        avatar.style.width = 100;
+        // create name/description
+        var nameNode = document.createTextNode(avatarName);
+        // append avatar + name
+        header.appendChild(avatar)
+        header.appendChild(nameNode);
+        // append header to cardContainer
+        cardContainer.appendChild(header);
+      }
+
+      function buildMainImage() {
+        var mainImg = document.createElement('img');
+        mainImg.setAttribute('src', mainImgURL)
+        mainImg.style.height = 300;
+        mainImg.style.width = 500;
+        // append main image
+        mainImageContainer.appendChild(mainImg);
+        // append header to cardContainer
+        cardContainer.appendChild(mainImageContainer);
+      }
+
+      function init() {
+        buildHeader();
+        buildMainImage();
+        document.body.appendChild(cardContainer);
+      }
+
+      return {
+        init: init
+      }
+    }
+
+    var testCard = Card('http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg', "Hi I'm a puppy", 'http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg')
+    testCard.init();
+
+
+    </script>
+  </body>
+</html>

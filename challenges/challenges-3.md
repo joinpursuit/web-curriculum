@@ -1,0 +1,3 @@
+- [JavaScript filter - 1](http://www.codewars.com/kata/javascript-filter-1/train/javascript) (7 kyu)
+- [Number Zoo Patrol](http://www.codewars.com/kata/number-zoo-patrol)
+- [Don't Drink The Water](http://www.codewars.com/kata/dont-drink-the-water) (5 kyu)

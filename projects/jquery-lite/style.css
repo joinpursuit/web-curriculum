@@ -1,0 +1,43 @@
+body {
+  font-family: Open Sans, sans-serif;
+}
+
+h1 {
+  font-size: 72px;
+  margin: 0;
+}
+
+.violet {
+  color: #C5AAF5;
+}
+
+.blue {
+  color: #A3CBF1;
+}
+
+.green {
+  color: #79BFA1;
+}
+
+.orange {
+  color:  #F5A352;
+}
+
+.red {
+  color: #FB7374;
+}
+
+.black {
+  background:  #423C40;
+}
+
+li {
+  margin-bottom: 5px;
+  font-size: 36px;
+}
+
+img {
+  display: block;
+  height: 300px;
+  border-radius: 5px;
+}

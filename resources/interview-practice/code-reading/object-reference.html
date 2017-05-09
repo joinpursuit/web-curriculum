@@ -1,0 +1,24 @@
+<script>
+
+var shape1 = {
+  name: 'triangle',
+  color: 'red'
+}
+
+var shape2 = shape1;
+
+var shape3 = Object.assign({}, shape1, {value: 100});
+
+console.log(shape1.name); // triangle
+
+shape2.name = 'square';
+
+console.log(shape1.name); // square
+
+shape1.color = 'green';
+
+console.log(shape3.color); // green OR red
+
+console.log(shape1.value)
+
+</script>

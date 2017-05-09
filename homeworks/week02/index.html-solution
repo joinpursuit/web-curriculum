@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 2, Homework</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script>
+
+function renderMovie(movie) {
+
+    var retVal = '<div class="movie ' + movie.genre + '">';
+
+    retVal += '<h1 class="name">' + movie.name + '</h1> ';
+    retVal += '<p>Release date: <span class="year">' + movie.year + '</span>, ';
+    retVal += 'Genre: <span class="genre">' + movie.genre + '</span>.</p>';
+    retVal += '<p>Starring: <ul>';
+
+    movie.cast.forEach(function(item,index) {
+	retVal += '<li>'+item+'</li>';
+    });
+
+    retVal += '</ul></p>';
+    retVal += '<p class="description">' + movie.description + '</p>';
+    retVal += '</div>';
+
+    return retVal;
+}
+
+function renderMovieCompact(movie) {
+
+    var retVal = '<li class="movie ' + movie.genre + '">';
+
+    retVal += '<span class="name">' + movie.name + '</span> ';
+    retVal += '(<span class="year">' + movie.year + '</span>, <span class="genre"> ' + movie.genre + '</span>) ';
+    retVal += ' starring: ';
+
+    movie.cast.forEach(function(item,index) {
+	if ( index > 0 )
+	    retVal += ', ';
+	retVal += item;
+    });
+
+    retVal += '</li>';
+
+    return retVal;
+}
+
+function render(movieArray, displayWide) {
+
+    var retVal = '';
+
+    if ( displayWide )
+    	retVal += '<div class="big">';
+    else
+    	retVal += '<div class="small"><ul>';
+
+    movieArray.forEach(function(item,index) {
+
+    	if ( displayWide )
+    	    retVal += renderMovie(item);
+    	else
+    	    retVal += renderMovieCompact(item);
+
+    	retVal += '\n';
+    });
+
+    if ( displayWide )
+    	retVal += '</div>';
+    else
+    	retVal += '</ul></div>';
+
+    return retVal;
+}
+
+</script>
+
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+- List of items in cart (objects w/ name and price)
+- Add items to cart (buttons with different items)
+- Delete items
+- Subtotal of cart

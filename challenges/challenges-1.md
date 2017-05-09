@@ -1,0 +1,4 @@
+- [How Good Are You Really](http://www.codewars.com/kata/how-good-are-you-really) (8 kyu)
+- [Katastrophe](http://www.codewars.com/kata/katastrophe) (7 kyu)
+- [Your Order Please](http://www.codewars.com/kata/your-order-please) (6 kyu)
+- [Directions Reduction](http://www.codewars.com/kata/directions-reduction) (5 kyu)

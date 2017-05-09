@@ -1,0 +1,24 @@
+# Interview Topics
+
+## JS Fundamentals
+1. closure
+1. async programming
+1. event loop/call stack/event queue
+1. scope
+1. callbacks
+1. promises
+1. classes/constructors/prototypes
+1. OOP
+1. higher order functions
+1. functional programming
+1. ES6
+1. string manipulation
+1. array manipulation
+1. call, apply, bind
+1. this keyword
+
+## Other
+1. how does the internet work?
+1. what happens when you type a URL into a browser and hit enter?
+
+## Node Fundamentals

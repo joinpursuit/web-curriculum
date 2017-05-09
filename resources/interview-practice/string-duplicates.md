@@ -1,0 +1,1 @@
+- remove duplicate letters from a string and return a new string

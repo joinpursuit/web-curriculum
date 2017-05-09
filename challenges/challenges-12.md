@@ -1,0 +1,3 @@
+- [Gradually Adding Parameters](https://www.codewars.com/kata/gradually-adding-parameters) (7 kyu)
+- [Who Won the Election](https://www.codewars.com/kata/who-won-the-election) (6 kyu)
+- [Fizz/Buzz](https://www.codewars.com/kata/fizz-slash-buzz) (6 kyu)

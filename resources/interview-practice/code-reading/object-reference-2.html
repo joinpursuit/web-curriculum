@@ -1,0 +1,27 @@
+arg3 = 1
+arg1 = {}
+
+// local scope
+c = 100
+
+<script>
+function objPlus(a, b, c) {
+  a.val += 1;
+  b.val += 5;
+  // c += 10;
+  // c = 11
+  arg3 = 11;
+  comsole.log(c)
+}
+
+var arg1 = {val: 1}
+
+var arg2 = {val: 1}
+
+var arg3 = 1;
+
+objPlus(arg1, arg2, arg3);
+// objPlus(arg1, arg2, arg3);
+
+console.log(arg1, arg2, arg3); // {val: 2}, {val: 6}, 11
+</script>

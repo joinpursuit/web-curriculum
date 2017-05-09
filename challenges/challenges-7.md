@@ -1,0 +1,4 @@
+- [Color Ghost](http://www.codewars.com/kata/color-ghost) (8 kyu)
+- [All Unique](http://www.codewars.com/kata/all-unique) (7 kyu)
+- [Is n divisible by (...)?](http://www.codewars.com/kata/is-n-divisible-by-dot-dot-dot) (7 kyu)
+- [Christmas Tree](http://www.codewars.com/kata/christmas-tree) (6 kyu)

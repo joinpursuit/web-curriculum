@@ -1,0 +1,13 @@
+canvas {
+  border: 1px solid black;
+
+}
+canvas:active{
+  cursor:crosshair;
+}
+button{
+ margin: 1px;
+}
+span{
+  margin-left: 20px;
+}

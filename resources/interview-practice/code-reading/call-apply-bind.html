@@ -1,0 +1,29 @@
+<script>
+
+var math1 = {
+  num1: 1,
+  num2: 100,
+  add: function() {
+    return this.num1 + this.num2
+  }
+}
+
+var math2 = {
+  num1: 33,
+  num2: 55
+}
+
+var num1 = 10;
+var num2 = 10;
+
+var a = math1.add();
+
+var b = math1.add.call({num1: 20, num2: 30});
+
+var add2 = math1.add.bind(math2);
+
+var c = add2(5, 5);
+
+console.log(`a:${a} b:${b} c:${c}`)
+
+</script>

@@ -1,0 +1,6 @@
+- given a string, return an object that has the count of each letter in the string
+- given a string, write a function that will reverse the string WITHOUT using the built in .reverse method
+- given a string, write a function that returns TRUE if the string is a palindrome, but returns FALSE if its not
+- given an array of numbers, write a function that returns the second smallest number
+- given a linked list, write a method to find if a value exists within the linked list
+- given a binary search tree, write a method to insert a new node into the tree

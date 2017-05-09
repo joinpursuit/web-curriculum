@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Account</title>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <div class="form">
+    <div class="row">
+      <span class="label">First Name</span>
+      <input id="first-name">
+      <span id="first-name-error" class="error">Missing First Name</span>
+    </div>
+    <div class="row">
+      <span class="label">Last Name</span>
+      <input id="last-name">
+      <span id="last-name-error" class="error">Missing Last Name</span>
+    </div>
+    <div class="row">
+      <span class="label">Email</span>
+      <input id="email-address" placeholder="me@domain.com">
+      <span id="email-address-error" class="error">Invalid Email Address</span>
+    </div>
+    <div class="row">
+      <span class="label">Phone Number</span>
+      <input id="phone-number" placeholder="000-000-0000">
+      <span id="phone-number-error" class="error">Invalid Phone Number</span>
+    </div>
+    <div class="row">
+      <span class="label">&nbsp;</span>
+      <button id="submit" disabled>Register</button>
+    </div>
+  </div>
+</body>
+</html>

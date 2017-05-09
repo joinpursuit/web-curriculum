@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <h1>hello</h1>
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
+      <button>Click Me</button>
+    </div>
+    <script>
+    function traverseDOM(node) {
+      console.log(node.nodeName);
+      if(node.childNodes.length === 0) return;
+      else node.childNodes.forEach(traverseDOM);
+    }
+
+    traverseDOM(document.body)
+    </script>
+  </body>
+</html>

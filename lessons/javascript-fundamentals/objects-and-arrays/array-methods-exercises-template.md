@@ -1,0 +1,14 @@
+@acxbank array-length
+@acxbank which-array-is-longer
+@acxbank add-two-array-elements
+@acxbank remove-last-two-from-array
+@acxbank array-middle-element
+@acxbank every-third-array-element
+@acxbank stringify-two-arrays
+@acxbank array-tail
+@acxbank join-three-arrays
+@acxbank remove-from-array
+@acxbank array-string-plus
+@acxbank array-last-to-first
+@acxbank array-double-challenge
+@acxbank array-sum-challenge

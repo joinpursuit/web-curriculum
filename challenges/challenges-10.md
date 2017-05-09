@@ -1,0 +1,4 @@
+- [Use Map to Double Values in Array](https://www.codewars.com/kata/use-map-to-double-the-values-in-an-array) (7 kyu)
+- [Largest Pair Sum in Array](https://www.codewars.com/kata/largest-pair-sum-in-array) (7 kyu)
+- [Cycle a list of values] (https://www.codewars.com/kata/cycle-a-list-of-values/javascript) (6 kyu)
+- [Function Composition](https://www.codewars.com/kata/function-composition-1/javascript) (6 kyu)

@@ -1,0 +1,42 @@
+/** {
+  text-align: center;
+}*/
+
+.square {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.input-box {
+  margin: 5px;
+}
+
+.green {
+  background-color: green;
+}
+
+.magenta {
+  background-color: magenta;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.lime {
+  background-color: lime;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid black;
+  position: relative;
+}

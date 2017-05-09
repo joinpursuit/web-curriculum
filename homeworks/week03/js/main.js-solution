@@ -1,0 +1,95 @@
+
+$(document).ready(function() {
+
+    // Step 1: Dynamic resize
+
+    $( window ).resize(function() {
+	if ( window.innerWidth > 500) {
+	    $('#frame').removeClass('small').addClass('big')
+	} else {
+	    $('#frame').removeClass('big').addClass('small')
+	}
+    })
+
+    // Step 2: Checkbox genre filters
+
+    /*
+
+      // (step 2 solution is commented out in step 4)
+
+    $('input:checkbox').change(function() {
+
+	if ( $('input#animation').prop('checked') ) {
+	    $('div.animation').show(500)
+	} else {
+	    $('div.animation').hide(500)
+	}
+
+	if ( $('input#action').prop('checked') ) {
+	    $('div.action').show(500)
+	} else {
+	    $('div.action').hide(500)
+	}
+
+	if ( $('input#drama').prop('checked') ) {
+	    $('div.drama').show(500)
+	} else {
+	    $('div.drama').hide(500)
+	}
+
+    })
+    */
+
+    // Step 3: Text box year filter
+
+    $('form').submit(function(event) { event.preventDefault(); })
+
+    /*
+
+      // (step 3 solution is also commented out in step 4)
+
+    $('input#year').keyup( function() {
+
+	var user_year = parseInt( $('input#year').val() )
+
+	$('div.movie').each(function() {
+
+	    var movie_year = parseInt( $(this).find('dd.year').html() )
+
+	    if ( movie_year > user_year ) {
+		$(this).show()
+	    } else {
+		$(this).hide()
+	    }
+	})
+	
+    })
+    */
+
+    // Step 4: Put it all together
+    $('input').bind('keyup change', function(event) {
+
+	var user_year = parseInt( $('input#year').val() )
+
+	if ( isNaN(user_year) ) {
+	    user_year = 0
+	}
+
+	$('div.movie').each(function() {
+
+	    var movie_year = parseInt( $(this).find('dd.year').html() )
+
+	    var movie_genre = $(this).find('dd.genre').html()
+
+	    var checked = $('input#'+movie_genre).prop('checked')
+
+	    if ( movie_year > user_year && checked ) {
+		$(this).show()
+	    } else {
+		$(this).hide()
+	    }
+	})
+    })
+
+});
+
