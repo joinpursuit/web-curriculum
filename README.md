@@ -1,3 +1,8 @@
+# Table of Contents
+Below is a breakdown of C4Q's web curriculum, organized by subject.
+
+Dead links (for example, 'JavaScript Under The Hood' and 'Async vs Sync') are suggestions for future lessons, but have not yet been created.
+
 ## JS Fundamentals
 - [Intro to Data Types: Strings, and Numbers ](./lessons/javascript-fundamentals/types-strings-and-numbers)
 - [Intro to Data Types: Objects (and Arrays) ](./lessons/javascript-fundamentals/objects-and-arrays)
@@ -10,10 +15,20 @@
 - [OOP](./lessons/javascript-advanced/OOP)
 - [Call, Apply, Bind](./lessons/javascript-advanced/call-apply-bind)
 - [Callbacks](./lessons/javascript-advanced/callbacks)
+- JavaScript Under the Hood: Call Stack, Event Loop, Callback Queue, and JS Runtime Engine
+- Async vs Sync
 
 ## DOM
 - [Intro to the DOM Part 1: Basics](./lessons/DOM/intro-to-the-DOM)
 - [Intro to the DOM Part 2: Events](./lessons/DOM/dom-deep-dive)
+- [DOM Cheatsheet](./lessons/DOM/dom-cheatsheet.md)
+- [Event Bubbling](./lessons/event-bubbling.html)
+
+## JavaScript Design Patterns
+- Module Pattern
+- Constructor/Classes Pattern
+- Observer Pattern
+- Building JavaScipt Apps without Frameworks
 
 ## HTML and CSS
 - [Intro to HTML and CSS Part 1](./lessons/html-and-css/intro-to-html-and-css-part-1)
@@ -25,6 +40,8 @@
 - [ES6 Classes](./lessons/es6/es6-classes)
 - [Spread Operator](./lessons/es6/spread-operator)
 - [Object Oriented ES6](./lessons/es6/object-oriented-es6)
+- Destructuring
+- Maps and Sets
 
 ## DS/A & Computer Science
 - [Intro To DS/A](./lessons/computer-science/intro-to-ds&a)
@@ -45,6 +62,7 @@
 
 ## Debugging
 - [Debugging](./lessons/debugging)
+- Chrome Dev Tools Sources Tab
 
 ## Databases
 - [Intro to Databases](./lessons/intro_databases.md)
@@ -52,8 +70,6 @@
 - [Advanced SQL](./lessons/sequelize_intro.md)
 - [Music Database Project](./lessons/music-database-project.md)
 
-## Deployment
-- [Deploying with Heroku](./lessons/deployment/heroku-deployment)
 
 ## Express
 - [Intro To Express](./lessons/express)
@@ -103,3 +119,11 @@
 
 ## Promises
 - [Promises](./lessons/promises)
+
+## Deployment
+- [Deploying with Heroku](./lessons/deployment/heroku-deployment)
+
+## Interview Practice
+- [Interview Practice Questions](./resources/interview-practice)
+- [JS Fundamentals Interview Questions](./resources/interview-practice/js-fundamentals-questions.md)
+- [JS Code Reading/Interpretation Interview Questions](./resources/interview-practice/code-reading)
