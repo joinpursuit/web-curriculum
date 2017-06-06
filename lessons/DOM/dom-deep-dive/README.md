@@ -1,5 +1,5 @@
-- title: DOM Review
-- topics: javascript, DOM
+title: DOM Review  
+topics: javascript, DOM
 
 # Resources
 - [What is the DOM?](https://css-tricks.com/dom/)
@@ -10,23 +10,22 @@
 - [DOM addEventListener Method](http://www.w3schools.com/jsref/met_element_addeventlistener.asp)
 - [DOM Event Bubbling](http://javascript.info/tutorial/bubbling-and-capturing)
 
-#Lecture
-##From static to dynamic pages
+# Lecture
+## From static to dynamic pages
 We're all familiar with HTML and CSS pages. It's pretty straightforward to create a static HTML page in Sublime Text or another similar text editor.
 
 However once we open up that HTML page in a browser, things start to get a little more interesting. In a browser our HTML pages basically become 'living documents', or in other words, they're no longer just static pages. Browsers basically allow us to interact with and *change* our formerly static HTML pages.
 
 Think about what's needed in order to turn a static HTML page into a living, changeable document. Given a static HTML page, how could you create a way to interact with it?
 
-##The browser creates the DOM
+## The browser creates the DOM
 So what is the DOM? You can start by [reading this](https://css-tricks.com/dom/), which should give you an introduction to what the DOM is doing.
 
 Basically, your browser creates the DOM based on your static HTML page. At its simplest the DOM is just your browser's interpretation of your HTML, structured in a way that lets you use JavaScript to interact with and manipulate your page.
 
 In other words, our HTML starts off as a static page. Then its loaded into our browser. But our browser needs some way to interact with the HTML. Luckily our browser understands JavaScript, so it can use JavaScript to interact with the HTML. But if we simply have a static HTML page there's no way for HTML and JavaScript to talk to each other. So our browser creates the DOM to make it a little easier to form a connection between HTML and JavaScript.
 
-
-##DOM basics
+## DOM basics
 To start, we can use the DOM methods to basically create any HTML that we could in a normal, static HTML page.
 
 Some examples:
@@ -93,11 +92,11 @@ mainDiv.appendChild(newButton);
 //Our new button will now be added within our main div
 ```
 
-##Exercises
+## Exercises
 - [DOM Exercises 1](dom-basic-exercises-1.md)
 - [DOM Exercises 2](dom-basic-exercises-2.md)
 
-##Event Listeners
+## Event Listeners
 So we know we can use DOM methods to do pretty much anything we could do with static HTML, but that's not the real power of the DOM. The DOM really starts becoming powerful when we want to perform dynamic changes and manipulation.
 
 The browser is a live, active environment where things are constantly happening and changing. Users interact with our web pages by doing things like clicking, hovering, scrolling, and entering text. Collectively these are known as 'events.' In other words, an 'event' occurs anytime the user interacts with our webpage in the browser. Events can also be trigged by other things as well, like a document loading.
@@ -141,13 +140,13 @@ document.getElementsByTagName('body')[0].addEventListener('click', function(even
   console.log(event); //this will log out a ton of info about the event to the console
 })
 ```
-##Event Bubbling
+## Event Bubbling
 Events will 'bubble' upwards to their parent elements. So if you trigger an event listener on an element that is nested within another element, even listeners on any parent elements will also get triggered. You can stop this bubbling by using the `event.stopPropogation` method, which is built into the special `event` object.
 
 Read more about event bubbling here: [DOM Event Bubbling](http://javascript.info/tutorial/bubbling-and-capturing)
 
-##Exercises
+## Exercises
 - [DOM Event Listener Exercises](dom-event-listeners-exercises-1.md)
 
-##Project
+## Project
 - [Todo List App](todo-list.md)
