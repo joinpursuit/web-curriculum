@@ -133,4 +133,4 @@ ReactDOM.render(
 ```
 
 ## Project
-[Store Listing App](projects/store-listing/README.md)
+[Store Listing App](../projects/store-listing/README.md)
